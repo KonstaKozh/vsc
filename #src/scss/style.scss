@@ -111,5 +111,22 @@ body {
  }
 }
 //===================================================================================================================================
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // .social__item
+  &__item {
+    transition: color 0.3s ease 0s;
+    margin: 0 17px;
+    font-size: 30px;
+    color: inherit;
+    @media (min-width:$md2+px) {
+      &:hover {
+        color: #ff6464;
+      }
+    }
+  }
+}
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
