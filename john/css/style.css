@@ -1363,9 +1363,6 @@ body.ie ._ibg img {
   display: -ms-flexbox;
   display: flex;
   margin: 0 0 20px 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .article__year {
@@ -1388,7 +1385,10 @@ body.ie ._ibg img {
 }
 
 .article__category {
+  -ms-flex-item-align: center;
+      align-self: center;
   font-size: 20px;
+  line-height: 125%;
   margin: 0 0 0 25px;
 }
 
@@ -1740,6 +1740,14 @@ body.ie ._ibg img {
 
   .blog__info {
     font-size: 16px;
+  }
+
+  .article__title {
+    font-size: 30px;
+  }
+
+  .article__category {
+    font-size: 18px;
   }
 
   .page {
